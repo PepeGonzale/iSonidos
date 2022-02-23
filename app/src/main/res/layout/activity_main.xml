@@ -17,6 +17,7 @@
             android:layout_weight="5"
             android:background="@color/black">
             <VideoView
+                android:id="@+id/videoView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical">
@@ -38,16 +39,20 @@
                 android:background="@color/black"
                 android:orientation="vertical">
                 <Button
-                android:id="@+id/button"
-                android:layout_width="176dp"
-                android:layout_height="66dp"
-                android:onClick="reproduceSonido"
-                android:text="sonidos_pilotes"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" /></LinearLayout>
+                    android:id="@+id/button"
+                    android:text="@string/video01"
+                    android:tag = "pilotes_video"
+                    android:layout_width="176dp"
+                    android:layout_height="66dp"
+                    android:onClick="reproduceVideo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 
